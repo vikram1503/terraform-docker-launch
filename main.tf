@@ -16,7 +16,7 @@ module "docker" {
 resource "aws_ebs_volume" "expense-docker" {
   availability_zone = "us-east-1a"
   size              = 50
-
+  
   tags = {
     Name = "docker-tf"
   }
